@@ -1,0 +1,852 @@
+/*  Resets	*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+/*	Initial Setup	*/
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:active {
+    color: inherit; }
+  a:visited {
+    color: inherit; }
+  a:hover {
+    color: white;
+    text-decoration: underline; }
+
+@font-face {
+  font-family: 'Roboto Condensed Local';
+  src: url("../font/roboto-condensed/roboto-condensed-regular.ttf");
+  font-style: normal;
+  font-weight: 400; }
+/*	Classes	*/
+body {
+	background-color: white;
+	font-family: 'Roboto Condensed', 'Roboto Condensed Local', Verdana;
+ }
+
+div.Container {
+  background-color: black;
+  border-color: lightgray;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 4px;
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 952px; }
+
+.CookieConsentNotice {
+  background-color: lightgray;
+  border-radius: 10px;
+  clear: both;
+  display: none;
+  padding: 10px;
+  width: 932px; }
+  .CookieConsentNotice a {
+    color: black; }
+  .CookieConsentNotice input {
+    background-color: black;
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    display: inline-block;
+    float: left; }
+  .CookieConsentNotice span {
+    float: left; }
+
+header {
+  background-color: transparent;
+  clear: both;
+  color: white;
+  display: inline-flex;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  header div.LogoBox {
+    display: inline-block;
+    float: left;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 70px; }
+    header div.LogoBox a.Logo {
+      border-radius: 6px;
+      border-color: #343434;
+      border-style: solid;
+      border-width: 6px;
+      display: inline-block;
+      float: left;
+      height: 58px;
+      text-align: left;
+      width: 58px; }
+      header div.LogoBox a.Logo:hover {
+        border-color: #FCFCFC; }
+      header div.LogoBox a.Logo img.LogoImg {
+        height: 58px;
+        width: 58px; }
+  header div.HeaderFunctions {
+    background-color: transparent;
+    clear: right;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    width: 862px; }
+    header div.HeaderFunctions div.SearchBar {
+      background-color: transparent;
+      float: left;
+      text-align: left;
+      width: 555.84px; }
+      header div.HeaderFunctions div.SearchBar input.SearchBox {
+        font-size: medium;
+        float: left;
+        height: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 6px;
+        width: 494.84px;
+        border-radius: 10px; }
+      header div.HeaderFunctions div.SearchBar a img.SearchSymbol {
+        display: inline-block;
+        float: left;
+        width: 35px;
+        height: 35px; }
+  header div.SocialMediaLinks {
+    background-color: transparent;
+    display: inline-block;
+    clear: right;
+    text-align: center;
+    width: 306.16px; }
+    header div.SocialMediaLinks ul {
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-block;
+      list-style: none; }
+      header div.SocialMediaLinks ul li {
+        padding-left: 2px;
+        padding-right: 2px;
+        display: inline-block;
+        float: left; }
+        header div.SocialMediaLinks ul li a.facebook {
+          background-image: url("../image/social/facebook.png");
+          background-size: 100% 100%;
+          display: block;
+          float: left;
+          height: 32px;
+          width: 32px; }
+          header div.SocialMediaLinks ul li a.facebook:hover {
+            background-image: url("../image/social/facebook-hover.png"); }
+        header div.SocialMediaLinks ul li a.flickr {
+          background-image: url("../image/social/flickr.png");
+          background-size: 100% 100%;
+          display: block;
+          float: left;
+          height: 32px;
+          width: 32px; }
+          header div.SocialMediaLinks ul li a.flickr:hover {
+            background-image: url("../image/social/flickr-hover.png"); }
+        header div.SocialMediaLinks ul li .google {
+          background-image: url("../image/social/google.png");
+          background-size: 100% 100%;
+          display: block;
+          float: left;
+          height: 32px;
+          width: 32px; }
+          header div.SocialMediaLinks ul li .google:hover {
+            background-image: url("../image/social/google-hover.png"); }
+        header div.SocialMediaLinks ul li .twitter {
+          background-image: url("../image/social/twitter.png");
+          background-size: 100% 100%;
+          display: block;
+          float: left;
+          height: 32px;
+          width: 32px; }
+          header div.SocialMediaLinks ul li .twitter:hover {
+            background-image: url("../image/social/twitter-hover.png"); }
+        header div.SocialMediaLinks ul li .share {
+          background-image: url("../image/social/share.png");
+          background-size: 100% 100%;
+          display: block;
+          float: left;
+          height: 32px;
+          width: 32px; }
+          header div.SocialMediaLinks ul li .share:hover {
+            background-image: url("../image/social/share-hover.png"); }
+        header div.SocialMediaLinks ul li .rss {
+          background-image: url("../image/social/rss.png");
+          background-size: 100% 100%;
+          display: block;
+          float: left;
+          height: 32px;
+          width: 32px; }
+          header div.SocialMediaLinks ul li .rss:hover {
+            background-image: url("../image/social/rss-hover.png"); }
+  header nav {
+    background-color: transparent;
+    border-style: solid;
+    float: left;
+    display: inline-block;
+    width: 555.84px;
+    text-align: left; }
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px; }
+        header nav ul li a {
+          background-color: #222222;
+          border-color: #343434;
+          border-style: solid;
+          border-width: 6px;
+          color: white;
+          display: inline-block;
+          font-size: small;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 10px;
+          height: 15px;
+          width: 80px; }
+          header nav ul li a:hover {
+            background-color: black;
+            border-color: #FCFCFC; }
+          header nav ul li a:visited {
+            color: white; }
+        header nav ul li.MiniMenuHeading {
+          display: none;
+          padding-left: 0; }
+        header nav ul li.ExpandedMenu {
+          display: none; }
+        header nav ul li:nth-of-type(3) {
+          padding-left: 0; }
+  header a.Basket {
+    border-radius: 6px;
+    border-color: #343434;
+    border-style: solid;
+    border-width: 6px;
+    clear: right;
+    display: inline-block;
+    float: left;
+    height: 23px;
+    width: 294.16px; }
+    header a.Basket:hover {
+      border-color: #FCFCFC; }
+    header a.Basket img.BasketImage {
+      width: 294.16px;
+      height: 23px; }
+
+main {
+  background-color: white;
+  border: 2px;
+  clear: both;
+  display: inline-block; }
+
+article {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 2px;
+  margin: 2px;
+  display: inline-block;
+  float: left;
+  width: 631.84px; }
+  article .SectionDisplay {
+    display: inline-block;
+    color: black;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    article .SectionDisplay h2 {
+      text-align: center; }
+  article .SiteBrand {
+    display: inline-block;
+    width: 100%; }
+    article .SiteBrand img.BrandImage {
+      border-width: 1px 1px 1px 1px;
+      border-radius: 10px;
+      border-color: lightgray;
+      border-style: solid;
+      width: 633.84px; }
+    article .SiteBrand .BrandImageTitle {
+      padding: 5px 0;
+      font-size: large;
+      text-align: center; }
+  article .GalleryItem {
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+    clear: right;
+    display: inline-block;
+    float: left;
+    width: 633.84px;
+    overflow-y: hidden;
+    height: 312.92px; }
+    article .GalleryItem h3 {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    article .GalleryItem .media {
+      border-radius: 10px;
+      float: left;
+      display: inline-block;
+      height: 257.92px;
+      width: 312.92px; }
+    article .GalleryItem .description {
+      border-radius: 10px;
+      display: inline-block;
+      float: left;
+      text-align: justify;
+      overflow: hidden;
+      padding: 10px;
+      height: 292.92px;
+      width: 292.92px; }
+    article .GalleryItem .videoSample {
+      border-radius: 10px;
+      border-color: lightgray;
+      border-style: solid;
+      text-align: center;
+      display: inline-block;
+      float: left;
+      width: 312.92px; }
+    article .GalleryItem:nth-child(odd) .media {
+      float: left; }
+    article .GalleryItem:nth-child(odd) .description {
+      float: right; }
+    article .GalleryItem:nth-child(even) .media {
+      float: right; }
+    article .GalleryItem:nth-child(even) .description {
+      float: left; }
+
+article.Homepage div.SiteBrand {
+  display: inline-block;
+  width: 100%; }
+article.Homepage .SampleItem {
+  border-radius: 10px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 2px;
+  clear: right;
+  display: inline-block;
+  float: left;
+  width: 633.84px;
+  overflow-y: hidden;
+  height: 312.92px; }
+  article.Homepage .SampleItem h3 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  article.Homepage .SampleItem .media {
+    border-radius: 10px;
+    float: left;
+    display: inline-block;
+    display: inline-block;
+    height: 257.92px;
+    width: 312.92px; }
+  article.Homepage .SampleItem .description {
+    border-radius: 10px;
+    display: inline-block;
+    float: left;
+    text-align: justify;
+    overflow: hidden;
+    padding: 10px;
+    height: 292.92px;
+    width: 292.92px; }
+  article.Homepage .SampleItem:nth-child(odd) .media {
+    float: left; }
+  article.Homepage .SampleItem:nth-child(odd) .description {
+    float: right; }
+  article.Homepage .SampleItem:nth-child(even) .media {
+    float: right; }
+  article.Homepage .SampleItem:nth-child(even) .description {
+    float: left; }
+
+article.CameraItem {
+  text-align: center; }
+  article.CameraItem .item {
+    padding: 4px;
+    float: left; }
+    article.CameraItem .item img.itemPicture {
+      border-color: lightgray;
+      border-style: solid;
+      border-radius: 6px;
+      border-width: 4px;
+      display: inline-block;
+      margin: 0 2px 0 2px;
+      float: left;
+      width: 300px;
+      height: 300px; }
+    article.CameraItem .item div.itemDescription {
+      border-color: lightgray;
+      border-style: solid;
+      border-radius: 6px;
+      border-width: 4px;
+      float: left;
+      display: inline-block;
+      text-align: justify;
+      width: 300px;
+      height: 300px; }
+      article.CameraItem .item div.itemDescription a {
+        color: black;
+        text-decoration: underline; }
+        article.CameraItem .item div.itemDescription a:hover {
+          font-weight: bold; }
+    article.CameraItem .item .itemPrice {
+      color: #CC0033;
+      clear: left;
+      display: inline-block;
+      float: left;
+      font-weight: bold;
+      margin: 5px;
+      text-align: center;
+      width: 300px; }
+    article.CameraItem .item .PurchaseItem {
+      clear: right;
+      display: inline-block;
+      float: left;
+      height: 300px;
+      margin: 5px;
+      text-align: center;
+      width: 300px; }
+      article.CameraItem .item .PurchaseItem a {
+        border-radius: 6px;
+        background-color: #4B9225;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: white; }
+        article.CameraItem .item .PurchaseItem a:hover {
+          background-color: #76B62C; }
+
+article.CameraAll {
+  text-align: center; }
+  article.CameraAll ul.ItemList {
+    list-style: none; }
+    article.CameraAll ul.ItemList li {
+      float: left;
+      margin-left: 2px;
+      margin-right: 2px; }
+  article.CameraAll .item {
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 4px;
+    margin: 2px 0;
+    padding: 4px;
+    float: left;
+    width: 155px; }
+    article.CameraAll .item a {
+      color: black; }
+      article.CameraAll .item a:hover {
+        font-weight: bold; }
+    article.CameraAll .item .itemName {
+      float: left;
+      display: table-cell;
+      text-align: center;
+      width: 155px; }
+    article.CameraAll .item .itemPicture {
+      display: table-cell;
+      float: left;
+      text-align: center;
+      width: 155px; }
+      article.CameraAll .item .itemPicture img {
+        width: 155px;
+        height: 155px; }
+    article.CameraAll .item .itemPrice {
+      color: #CC0033;
+      font-weight: bold;
+      display: table-cell;
+      float: left;
+      text-align: center;
+      width: 155px; }
+    article.CameraAll .item .PurchaseItem {
+      display: table-cell;
+      float: left;
+      text-align: center;
+      width: 155px; }
+      article.CameraAll .item .PurchaseItem a {
+        border-radius: 6px;
+        background-color: #4B9225;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: white; }
+        article.CameraAll .item .PurchaseItem a:hover {
+          background-color: #76B62C; }
+
+article.ContactUs {
+  padding-left: 4px;
+  width: 627.84px; }
+  article.ContactUs .Form_Input {
+    margin-top: 20px; }
+  article.ContactUs .Output_Display {
+    margin-top: 20px;
+    display: none; }
+  article.ContactUs .ContactDetails {
+    display: inline-block;
+    float: left;
+    padding-right: 20px; }
+  article.ContactUs .Map {
+    float: left;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    width: 200px;
+    height: 200px; }
+  article.ContactUs input {
+    border-width: 1px 1px 1px 1px;
+    padding: 2px;
+    border-color: lightgray;
+    border-style: solid; }
+  article.ContactUs textarea {
+    border-width: 1px 1px 1px 1px;
+    padding: 2px;
+    border-color: lightgray;
+    border-style: solid;
+    clear: right;
+    float: left; }
+  article.ContactUs button {
+    clear: left;
+    float: left; }
+  article.ContactUs .FieldName {
+    clear: left;
+    font-weight: bold;
+    float: left;
+    width: 100px; }
+  article.ContactUs .FieldValue {
+    clear: right;
+    float: left; }
+  article.ContactUs a.emailFieldValue {
+    clear: right;
+    float: left;
+    color: black; }
+    article.ContactUs a.emailFieldValue:hover {
+      color: black;
+      text-decoration: underline; }
+    article.ContactUs a.emailFieldValue:visited {
+      color: black; }
+  article.ContactUs p {
+    clear: both;
+    float: left; }
+  article.ContactUs address {
+    display: inline;
+    float: left; }
+  article.ContactUs .map {
+    display: inline;
+    float: left;
+    width: 300px;
+    height: 300px; }
+
+aside {
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 2px;
+  clear: right;
+  color: white;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  width: 306.16px; }
+  aside .CameraActivity, aside .ShopFilter, aside .AppAdvertBox, aside .GalleryPreview, aside .TwitterFeed {
+    border-radius: 6px;
+    background-color: #404040;
+    clear: both;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 5px 0;
+    width: 298.16px; }
+    aside .CameraActivity h3, aside .ShopFilter h3, aside .AppAdvertBox h3, aside .GalleryPreview h3, aside .TwitterFeed h3 {
+      font-size: large; }
+  aside .ShopFilter div {
+    padding: 0 20px;
+    text-align: left; }
+  aside .ShopFilter input[type=number] {
+    width: 40px;
+    /* Awesome styling */ }
+  aside .AppAdvertBox {
+    clear: both;
+    display: inline-block;
+    padding: 0; }
+    aside .AppAdvertBox a.AppAdvert:hover {
+      border-color: #FCFCFC; }
+    aside .AppAdvertBox a.AppAdvert:visited {
+      border-color: #404040; }
+    aside .AppAdvertBox a.AppAdvert img.APPAdvertImg {
+      display: inline-block;
+      height: 151.08px;
+      width: 286.16px; }
+  aside .GalleryPreview a {
+    margin: 5px 0; }
+    aside .GalleryPreview a .GalleryPreviewImage {
+      background-color: white;
+      display: inline-block;
+      height: 296.16px;
+      width: 296.16px; }
+  aside .TwitterFeed {
+    padding: 0;
+    border-color: lightgray;
+    border-style: solid;
+    width: 298.16px; }
+    aside .TwitterFeed iframe[id^="twitter-widget-"] {
+      height: 397.54667px !important;
+      width: 298.16px !important;
+      width: 294.16px !important; }
+
+footer {
+  background-color: transparent;
+  clear: both;
+  color: white;
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  text-align: center;
+  width: 892px; }
+  footer .W3C-CSS {
+    border: 0;
+    width: 88px;
+    height: 31px; }
+  footer h4 {
+    color: white;
+    font-size: medium; }
+  footer ul {
+    list-style: none;
+    margin-left: 10px; }
+    footer ul li {
+      font-size: smaller;
+      float: none; }
+  footer .UsefulInformation {
+    background-color: transparent;
+    display: inline-block;
+    text-align: left;
+    float: left;
+    width: 290.36px; }
+  footer .Help {
+    background-color: transparent;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    width: 299.28px; }
+  footer .NewsLetterSignUp {
+    background-color: transparent;
+    display: inline-block;
+    float: left;
+    text-align: left;
+    width: 290.36px; }
+    footer .NewsLetterSignUp p {
+      font-size: x-small;
+      width: 251px; }
+    footer .NewsLetterSignUp div.SignUpForm {
+      border-radius: 5px;
+      display: inline-block;
+      font-size: smaller;
+      padding: 2px;
+      border-color: darkgrey;
+      border-style: solid;
+      border-width: 1px;
+      width: 245px; }
+      footer .NewsLetterSignUp div.SignUpForm input {
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        float: left;
+        font-family: 'Times New Roman', Times, serif;
+        height: 15px;
+        width: 110px;
+        font-size: smaller; }
+        footer .NewsLetterSignUp div.SignUpForm input.NewsLetterName {
+          margin-right: 5px;
+          margin-bottom: 5px; }
+        footer .NewsLetterSignUp div.SignUpForm input.NewsLetterSurname {
+          clear: right;
+          margin-bottom: 5px; }
+        footer .NewsLetterSignUp div.SignUpForm input.NewsLetterEmail {
+          width: 190px;
+          margin-right: 5px; }
+        footer .NewsLetterSignUp div.SignUpForm input.NewsLetterJoin {
+          width: 40px; }
+  footer .CompanyRegistration {
+    clear: right;
+    float: left;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    font-size: x-small;
+    text-align: center;
+    width: 888px; }
+
+div.JavaScripts {
+  display: none; }
+
+/*						 
+ __  __          _ _          ___                  _           
+|  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___ 
+| |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| |/ _ \/ __|
+| |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |  __/\__ \
+|_|  |_|\___|\__,_|_|\__,_|  \__\_\__,_|\___|_|  |_|\___||___/
+                                                               
+*/
+@media (max-width: 750px) {
+  header .HeaderFunctions a.Basket {
+    text-align: center;
+    clear: both;
+    background-color: #222222;
+    width: 520.84px; }
+
+  aside,
+  header .HeaderFunctions div.SocialMediaLinks {
+    display: none; }
+    aside div.HeaderFunctions input.SearchBox,
+    header .HeaderFunctions div.SocialMediaLinks div.HeaderFunctions input.SearchBox {
+      width: 488.84px; }
+
+  header div.HeaderFunctions {
+    width: 762px; }
+    header div.HeaderFunctions div.SearchBar {
+      width: 535.84px; }
+      header div.HeaderFunctions div.SearchBar input.SearchBox {
+        width: 474.84px; }
+
+  div.Container {
+    width: 633.84px; }
+
+  .CookieConsentNotice {
+    width: 613.84px; }
+
+  header div.HeaderFunctions {
+    width: 555.84px; }
+
+  footer {
+    width: 633.84px; }
+    footer .UsefulInformation {
+      background-color: transparent;
+      display: inline-block;
+      text-align: left;
+      float: left;
+      width: 290.36px; }
+    footer .Help {
+      background-color: transparent;
+      display: inline-block;
+      float: left;
+      text-align: left;
+      width: 299.28px; }
+    footer .NewsLetterSignUp {
+      background-color: cadetblue;
+      display: none; }
+      footer .NewsLetterSignUp div.SignUpForm {
+        border-radius: 5px;
+        display: inline-block;
+        font-size: smaller;
+        padding: 2px;
+        border-color: darkgrey;
+        border-style: solid;
+        border-width: 1px;
+        width: 245px; }
+    footer .CompanyRegistration {
+      width: 623.84px; } }
+@media (max-width: 480px) {
+  .CookieConsentNotice {
+    width: 420px; }
+
+  header {
+    width: 440px; }
+    header div.LogoBox {
+      display: none; }
+    header div.HeaderFunctions {
+      width: 440px; }
+      header div.HeaderFunctions div.SearchBar {
+        width: 440px; }
+        header div.HeaderFunctions div.SearchBar input.SearchBox {
+          width: 370px; }
+      header div.HeaderFunctions a.Basket {
+        text-align: center;
+        clear: both;
+        width: 430px; }
+    header nav {
+      float: left;
+      width: 440px; }
+      header nav ul {
+        margin: 0; }
+        header nav ul li {
+          width: 430px;
+          display: none;
+          padding: 0; }
+          header nav ul li.MiniMenuHeading {
+            display: block; }
+          header nav ul li a {
+            font-size: large;
+            height: 25px;
+            width: 430px; }
+        header nav ul:hover li {
+          display: block; }
+
+  div.Container {
+    width: 440px; }
+
+  article {
+    width: 440px; }
+    article img.BrandImage {
+      display: none; }
+    article .GalleryItem {
+      height: auto;
+      width: 415px; }
+      article .GalleryItem .media {
+        display: inline-block;
+        float: left;
+        clear: both;
+        width: 440px; }
+      article .GalleryItem .description {
+        display: inline-block;
+        clear: both;
+        float: left;
+        text-align: justify;
+        padding: 10px;
+        height: auto;
+        width: 415px; }
+      article .GalleryItem:nth-child(odd) .media {
+        clear: both;
+        float: left; }
+      article .GalleryItem:nth-child(odd) .description {
+        clear: both;
+        float: left; }
+      article .GalleryItem:nth-child(even) .media {
+        clear: both;
+        float: left; }
+      article .GalleryItem:nth-child(even) .description {
+        clear: both;
+        float: left; }
+
+  article.ContactUs {
+    width: 425px; }
+
+  article.ContactUs .ContactDetails {
+    clear: both; }
+
+  article.ContactUs .MapBox {
+    width: 440px;
+    clear: both; }
+
+  img.Map {
+    clear: both; }
+
+  footer {
+    width: 400px; }
+    footer .UsefulInformation {
+      display: none; }
+    footer .Help {
+      display: none; }
+    footer .NewsLetterSignUp {
+      display: none; }
+    footer .CompanyRegistration {
+      width: 400px; } }
