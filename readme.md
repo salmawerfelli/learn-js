@@ -1,4 +1,4 @@
-# [Learn web development](https://github.com/markcrowe-com/learn-web-development/)
+# [Learn web development](https://github.com/marcocrowe/learn-web-development/)
 
 A collection of Web Projects to learn the basics web development with HTML, CSS and Javascript.
 
@@ -25,4 +25,4 @@ A collection of Web Projects to learn the basics web development with HTML, CSS 
 
 ---
 
-Copyright &copy; 2024 Mark Crowe [https://github.com/markcrowe-com](https://github.com/markcrowe-com). All rights reserved.
+Copyright &copy; 2024 Mark Crowe [https://github.com/marcocrowe](https://github.com/marcocrowe). All rights reserved.
